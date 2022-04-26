@@ -1,4 +1,4 @@
-#moyenneEleves
+# moyenneEleves
 
 ## Exercise in Autonomy
 

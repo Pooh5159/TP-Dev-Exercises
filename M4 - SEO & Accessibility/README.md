@@ -1,6 +1,7 @@
 # M4 - SEO & Accessibility
 
-## Exercise in Autonomy
+## exerciseSEO
 
-### exerciseSEO
+### Exercise in Autonomy
+
 Exercise carried out according to the instructions https://bit.ly/3xbNCEq

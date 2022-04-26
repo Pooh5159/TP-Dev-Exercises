@@ -2,7 +2,7 @@
 
 ## siteBootstrap
 
-First us of Bootstra^p
+First us of Bootstrap
 
 ## cardBootstrap
 

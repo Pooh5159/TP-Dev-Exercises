@@ -1,0 +1,74 @@
+@font-face {
+   font-family: "Pokemon Solid";
+   src: local("./font/Pokemon-Solid.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Regular";
+    src: local("./font/Roboto-Regular.ttf");
+}
+
+h1 {
+    text-decoration: underline;
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-size: 5em;
+    text-shadow: 2px 2px 5px red;
+    /* text-shadow: X Y blur-radius color; */
+    font-family: "Pokemon Solid";
+}
+
+.pokedex {
+    height: 210px;
+    margin: 5px;
+}
+
+table, td, th {
+    border: solid 2px green;
+    border-collapse: collapse;    
+}
+
+table {
+    box-shadow: 5px 5px 5px lightgreen;
+    font-family: "Roboto Regular";
+}
+
+.trTitle {
+    background-color: lightgreen;
+}
+
+table img {
+    height: 70px;
+    margin: 10px;
+}
+
+table img:hover {
+    transform: scale(1.5);
+    transition: 0.2s;
+}
+
+td, th {
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+}
+
+button {
+    margin-top: 10px;
+    padding: 20px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    border: 0;
+    box-shadow: 0 5px 0 darkred;
+    font-family: "Roboto Regular";
+}
+
+button:hover {
+    background-color: green;
+    box-shadow: none;
+    transition: 0.15s;
+    transform: translateY(5px);
+    cursor: pointer;
+}

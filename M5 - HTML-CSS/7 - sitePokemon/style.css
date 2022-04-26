@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&family=Source+Serif+Pro:ital@1&display=swap');
+
+body {
+    margin: 0;
+}
+
+h1, h3, h4, h6, p {
+    margin: 0;
+}
+
+/* NAVBAR */
+nav {
+    background-color: rgb(78, 78, 78);    
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.burger {
+    display: none;
+}
+
+nav img {
+    height: 80px;
+}
+
+nav div {
+    width: 20%;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:last-child {
+    margin-left: 10%;
+}
+
+/* HEADER */
+header {
+    background-image: url(./images/Banner.png);
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    color: white;
+}    
+
+header div {
+    height: 100%;
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.322);
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 3em;
+}
+
+header p {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 2em;
+}
+
+hr {
+    background-color: rgb(255, 208, 0);
+    height: 10px;
+    border: none;
+    margin: 0;
+}
+
+/* BODY */
+
+h2, h4, h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    margin: 3% 0 0 0;
+}
+
+.services p, .pokedex p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
+    margin-top: 2%;
+}
+
+.services, .pokedex {
+    margin: 2% 0 2% 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.services {
+    text-align: center;
+}
+
+
+.services i {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background-color: rgb(255, 208, 0);
+    color: white;
+    margin: 3%;
+    font-size: 2.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokedex img {
+    width: 250px;
+    margin-bottom: 4%;
+}
+
+.service, .pokemon {
+    width: 350px;
+    margin: 0 2% 0 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.voir {
+    background-color: rgb(255, 208, 0);
+    text-align: center;
+    padding: 15px;
+}
+
+.voir a {
+    text-decoration: none;
+    color: rgb(78, 78, 78);
+    font-family: 'Roboto', sans-serif;
+}
+
+.voir i {
+    height: 10px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: rgb(78, 78, 78);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer i {
+    height: 20px;
+    color: white;
+}
+
+footer div {
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 725px) {
+    nav div {
+        display: none;        
+    }
+    .burger {
+        display: block;
+        border: 0.5px solid white;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    h1 {
+        text-align: center;
+    }
+    .services, .pokedex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .pokedex img {
+        margin-top: 4%;
+    }
+    footer div {
+        width: 20%;
+    }
+}

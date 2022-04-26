@@ -1,0 +1,125 @@
+.article {
+    font-family: sans-serif;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.pictProduct {
+    height: 300px;
+}
+
+.fiche {
+    margin-left: 10px;
+    display: block
+}
+
+.degree-time {
+    display: flex;
+    justify-content: space-between;
+}
+
+.degree {
+    width: 100px;
+    border: 0.5px solid lightgray;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+.degree button {
+    border: none;
+    font-size: 30px;
+}
+
+.degree p {
+    color: red;
+    font-weight: bolder
+}
+
+.buttonLess {
+    color: darkcyan;
+}
+
+.buttonMore {
+    color: red;
+}
+
+.time {
+    color: gray;
+    align-items: center;
+}
+
+.picto {
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+}
+
+h1, h2 {
+    font-size: x-large;
+}
+
+h2 {
+    margin: 0;
+}
+
+.description p {
+    margin-top: 20px;
+}
+
+.price {
+    font-weight: bold;
+    color: red;
+}
+
+.reduction {
+    font-weight: lighter;
+    color: gray;
+    text-decoration-line: line-through;
+}
+
+.time {
+    display: flex;
+}
+
+.bottom-article {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+}
+
+.whiteButton {
+    display: flex;
+    justify-content: center;
+    border: 0.5px solid lightgray;
+    margin-right: 10px;
+}
+
+.blueButton {
+    display: flex;
+    justify-content: center;
+    border: none;
+    background-color: darkcyan;
+    color: white;
+}
+
+.whiteButton, .blueButton {
+    border-radius: 10px;
+    height: 50px;
+    align-items: center;
+}

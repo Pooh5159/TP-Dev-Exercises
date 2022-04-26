@@ -1,0 +1,4 @@
++ Logo qui rotate
++ L'image du header qui s'assombrit et zoom
++ Bouton "voir le pokedex" qui s'assombrit et le texte passe au blanc
++ Button tu footer avec un fond plus sombre

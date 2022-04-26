@@ -1,0 +1,29 @@
+#c1 {
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+#c1 > div {
+    padding: 20px;
+}
+
+#e1 {
+    background-color: red;
+}
+
+#e2 {
+    background-color: blue;
+}
+
+#e3 {
+    background-color: purple;
+}
+
+#e4 {
+    background-color: yellow;
+}
+
+#e5 {
+    background-color: pink;
+}

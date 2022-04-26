@@ -1,0 +1,48 @@
+.article {
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    font-family: sans-serif;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.time {
+    color: gray;
+}
+
+.categorie {
+    border-radius: 10px;
+    background-color: rgb(51, 51, 51);
+    padding: 0 10px 0 10px;
+    font-size: 0.9rem;
+    font-weight: bolder;
+}
+
+.switch {
+    color: red;
+}
+
+.serie {
+    color: gold;
+}
+
+.preview {
+    display: flex;
+}
+
+img {
+    margin-right: 10px;
+    width: 300px;
+}
+
+h3 {
+    color: red;
+    font-weight: lighter;
+}

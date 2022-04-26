@@ -1,0 +1,13 @@
+Vous travaillez comme SEO chez Toyota France. Le service marketing vous a donné ce texte à mettre en ligne sur le site Internet.
+Vous devez :
+
+- Trouver le titre de l’article
+- Définir l’URL la plus judicieuse
+- Trouver les sous-titres (h2) de chaque paragraphes
+- Insérer dans chaque paragraphe une image
+    - Pour chacune de ces images, vous devez :
+        - Remplir les balises Méta essentielles (ALT, Title, Légende, Description)
+        - Redimensionner les images etc...
+- Trouver les balises Méta de la page
+- Insérer un lien interne vers cette page (https://www.toyota.fr/gamme-electrifiee/hybride/gamme-hybride)
+- Insérer un lien externe vers un comparatif de votre choix.

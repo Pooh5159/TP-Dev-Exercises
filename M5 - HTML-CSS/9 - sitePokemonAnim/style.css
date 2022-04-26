@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&family=Source+Serif+Pro:ital@1&display=swap');
+
+body {
+    margin: 0;
+}
+
+h1, h3, h4, h6, p {
+    margin: 0;
+}
+
+/* NAVBAR */
+nav {
+    background-color: rgb(78, 78, 78);    
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.burger {
+    display: none;
+}
+
+nav img {
+    height: 80px;
+}
+
+nav img:hover {
+    transform: rotate(8deg);
+}
+
+nav div {
+    width: 20%;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:last-child {
+    margin-left: 10%;
+}
+
+/* HEADER */
+header {
+    background-image: url(./images/Banner.png);
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    color: white;
+}    
+
+header div {
+    height: 100%;
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.322);
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 3em;
+}
+
+header p {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 2em;
+}
+
+hr {
+    background-color: rgb(255, 208, 0);
+    height: 10px;
+    border: none;
+    margin: 0;
+}
+
+/* BODY */
+
+h2, h4, h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    margin: 3% 0 0 0;
+}
+
+.services p, .pokedex p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
+    margin-top: 2%;
+}
+
+.services, .pokedex {
+    margin: 2% 0 2% 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.services {
+    text-align: center;
+}
+
+
+.services i {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    border: 10px transparent;
+    background-color: rgb(255, 208, 0);
+    color: white;
+    margin: 3%;
+    font-size: 2.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services i:hover {
+    border: 10px solid rgb(255, 236, 149);
+    margin: 0%;
+}
+
+.pokedex img {
+    width: 250px;
+    margin-bottom: 4%;
+}
+
+.service, .pokemon {
+    width: 350px;
+    padding: 0 2% 0 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokemon {
+    height: 400px;
+    background-color: rgb(255, 244, 223);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgb(70, 70, 70);
+    margin: 1%;
+    transition: .2s all;
+}
+
+.pokemon:hover {
+    transform: rotate(2deg) scale(1.2);
+    box-shadow: 4px 4px 10px rgb(70, 70, 70);
+}
+
+button {
+    background-color: rgb(255, 208, 0);
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    border: none;
+    transition: .2s all;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(78, 78, 78);
+}
+
+.bottomLink {
+    text-decoration: none;    
+}
+
+button i {
+    height: 10px;
+}
+
+button:hover {
+    background-color: rgb(117, 96, 1);
+    color: white;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: rgb(78, 78, 78);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer i {
+    height: 20px;
+    color: white;
+}
+
+.reseau {
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.reseau:hover {
+    background-color: rgb(37, 37, 37);
+}
+
+footer div {
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 725px) {
+    nav div {
+        display: none;        
+    }
+    .burger {
+        display: block;
+        border: 0.5px solid white;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    h1 {
+        text-align: center;
+    }
+    .services, .pokedex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .pokedex img {
+        margin-top: 4%;
+    }
+    footer div {
+        width: 20%;
+    }
+}

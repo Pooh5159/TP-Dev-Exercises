@@ -1,0 +1,10 @@
+Créer un bouton
+Ajouter à l'aide d'un ::before un élément
+Placez-le.
+Sur le parent : position:relative;
+Sur l'enfant : position:absolute;
+Centrez-le à l'aide du top/ left/ transform translate
+Mettez en fond : z-index
+Appliquez-lui une width : 100% et une height :0%
+Lors du hover, modifiez la height en 100% !
+Activez les transitions avec la propriété "transition"

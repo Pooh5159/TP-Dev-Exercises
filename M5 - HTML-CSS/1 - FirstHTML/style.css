@@ -1,0 +1,11 @@
+body {
+    background-color: lightgreen;
+}
+
+h1, h2 {
+    color: green;
+}
+
+p {
+    color: darkgoldenrod;
+}

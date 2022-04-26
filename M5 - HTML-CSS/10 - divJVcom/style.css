@@ -1,0 +1,79 @@
+.back {
+    width: 100%;
+    background-color: rgb(48, 48, 48);
+    padding: 2% 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card {
+    width: 20%;
+    height: 600px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1%;
+}
+
+#ghostwire {
+    background-image: linear-gradient(transparent,black), url(https://image.jeuxvideo.com/medias-sm/164744/1647437328-7223-card.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#tablette {
+    background-image: linear-gradient(transparent,black), url(https://image.jeuxvideo.com/medias-sm/164771/1647711266-852-card.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+#lego {
+    background-image: linear-gradient(transparent,black), url(https://image.jeuxvideo.com/medias-sm/164795/1647952706-1670-card.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#ubi {
+    background-image: linear-gradient(transparent,black), url(https://image.jeuxvideo.com/medias-sm/164795/1647951745-9003-card.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.blueButton {
+    border: none;
+    border-radius: 8px;
+    background-color: blue;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 3% 6%;
+    text-align: center;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+}
+
+h3, p, span {
+    margin: 0;
+    color: white;
+    font-family: sans-serif;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+span {
+    font-size: small;
+    border: 1px solid white;
+    background-color: black;
+    border-radius: 10px;
+    margin: 2% 2%;
+    padding: 1%;
+}

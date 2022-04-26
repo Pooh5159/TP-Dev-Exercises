@@ -3,4 +3,4 @@
 ## Exercise in Autonomy
 
 ### exerciseSEO
-Exercise carried out according to the instructions[https://bit.ly/3xbNCEq]
+Exercise carried out according to the instructions https://bit.ly/3xbNCEq

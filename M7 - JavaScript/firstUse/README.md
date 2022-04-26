@@ -13,7 +13,7 @@ First variable declaration
 ## 4
 
 ### Exercise in Autonomy
-First first concatenate
+First concatenate
 
 ## 5 + 6 + 7
 

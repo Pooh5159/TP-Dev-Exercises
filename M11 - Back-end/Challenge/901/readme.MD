@@ -28,4 +28,4 @@ Vous trouverez une variable de type array() dans le fichier arrayTeams.php, et d
 
 ### *Facultatif*
 
-*4 - Créer une nouvelle page detail.php qui prendra en paramètre GET l'id de la team cliquée, libre à vous d'afficher un maximum d'inofmrtaions (utiles) dans cette page détails*
+*4 - Créer une nouvelle page detail.php qui prendra en paramètre GET l'id de la team cliquée, libre à vous d'afficher un maximum d'informations (utiles) dans cette page détails*

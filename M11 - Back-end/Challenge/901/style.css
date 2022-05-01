@@ -1,0 +1,101 @@
+/* GENERAL */
+body {
+    margin: 0;
+}
+
+h1, h2, h3, p, a {
+    margin: none;
+    font-family: sans-serif;
+}
+
+h1 {
+    color: #37003C;
+    text-align: center;
+}
+
+h2, h3 {
+    color: #e90052;
+    text-align: center;
+}
+
+p {
+    color: white;
+}
+
+/* HEADER */
+
+header {
+    background-color: #37003C;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header img {
+    height: 100px;
+}
+
+/* CARD */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 20%;
+    padding: 1%;
+    margin: 1%;
+    background-color: #37003c;
+    border-radius: 30px 0;
+}
+
+.team {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.badge {
+    height: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: #e90052;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.jersey {
+    width: 100%;
+    margin: auto;
+}
+
+.bold {
+    font-weight: bold;
+    text-align: center;
+}
+
+.stadium {
+    width: 100%;
+    border-radius: 30px 0;
+}
+
+/* FOOTER */
+
+footer {
+    height: 40px;
+    width: 100%;
+    background-color: #37003C;
+    padding: 1%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

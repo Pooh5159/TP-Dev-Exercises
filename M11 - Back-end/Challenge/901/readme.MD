@@ -24,7 +24,7 @@ Vous trouverez une variable de type array() dans le fichier arrayTeams.php, et d
 
 2 - Créer une boucle afin de trouver un affichage de 4 équipes par lignes, le nombre de lignes étant dépendant du nombre d'équipes consituant le tableau
 
-3 - Afficher dans une "card" (un bloc bien définir par un contour) chacune des équipes avec les éléments imposés ci-dessus
+3 - Afficher dans une "card" (un bloc bien défini par un contour) chacune des équipes avec les éléments imposés ci-dessus
 
 ### *Facultatif*
 

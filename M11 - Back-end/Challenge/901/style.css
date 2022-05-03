@@ -8,19 +8,6 @@ h1, h2, h3, p, a {
     font-family: sans-serif;
 }
 
-h1 {
-    color: #37003C;
-    text-align: center;
-}
-
-h2, h3 {
-    color: #e90052;
-    text-align: center;
-}
-
-p {
-    color: white;
-}
 
 /* HEADER */
 
@@ -36,55 +23,232 @@ header img {
     height: 100px;
 }
 
-/* CARD */
+
+/* INDEX */
+
+/* GENERAL */
 
 .container {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
-.card {
+.h1Index {
+    color: #37003C;
+    text-align: center;
+}
+
+/* CARD */
+
+.cardCard {
     width: 20%;
     padding: 1%;
     margin: 1%;
-    background-color: #37003c;
+    background-color: #37003C;
     border-radius: 30px 0;
+    box-shadow: 5px 5px 10px #e90052;
 }
 
-.team {
+.h2Card, .h3Card {
+    color: #e90052;
+    text-align: center;
+}
+
+.pCard {
+    color: white;
+}
+
+.teamCard {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
 
-.badge {
+.badgeCard {
     height: 50px;
 }
 
-a {
+.aCard {
     text-decoration: none;
     color: #e90052;
 }
 
-a:hover {
+.aCard:hover {
     text-decoration: underline;
 }
 
-.jersey {
+.jerseyCard {
     width: 100%;
     margin: auto;
 }
 
-.bold {
+.boldCard {
     font-weight: bold;
     text-align: center;
 }
 
-.stadium {
+.stadiumCard {
     width: 100%;
     border-radius: 30px 0;
+}
+
+/* DETAIL */
+
+.bannerDetail {
+    width: 100%;
+}
+
+.teamDetail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h1Detail {
+    color: #e90052;
+}
+
+.badgeDetail {
+    height: 50px;
+    margin-left: 10px;
+}
+
+.underBannerDetail {
+    width: 100%;
+    background-color: #37003C;
+    padding: 0 50px;
+    position: sticky;
+    top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.underBannerDetail a {
+    font-size: 30px;
+    color: #e90052;
+}
+
+.socialDetail {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.socialDetail a {
+    font-size: 30px;
+    color: #e90052;
+    margin: 0 10px;
+}
+
+.mainDetail {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.main1Detail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.cardDetail {
+    width: 30%;
+    background-color: #37003C;
+    border-radius: 0 25px;
+    padding: 30px;
+    box-shadow: 5px 5px 10px #e90052;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardDetail img {
+    width: 100%;
+    border-radius: 0 25px;
+}
+
+.h2Detail {
+    color: #e90052;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.pDetail {
+    color: white;
+    line-height: 1.7;
+}
+
+.infoDetail {
+    background-color: #e90052;
+    width: 60%;
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 0 25px;
+}
+
+.h2InfoDetail {
+    color: #37003C;
+    text-align: center;
+}
+
+hr {
+    border: solid 1px #37003C;
+}
+
+.h3Detail {
+    color: #37003C;
+}
+
+.cardTrophyDetail {
+    width: 10%;
+    background-color: #37003C;
+    border-radius: 0 25px;
+    padding: 30px;
+    box-shadow: 5px 5px 10px #e90052;
+}
+
+.trophyDetail {
+    border: solid #e90052;
+    border-radius: 50px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.main2Detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardGalleryDetail {
+    width: 90%;
+    margin-top: 50px;
+    background-color: #37003C;
+    border-radius: 0 25px;
+    padding: 0 30px 30px 30px;
+    box-shadow: 5px 5px 10px #e90052;
+}
+
+.galleryDetail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.galleryDetail img {
+    width: 10%;
+    object-fit: cover;
+    border: solid 5px #e90052;
+    border-radius: 0 25px;
+    background-color: white;
+}
+
+.galleryDetail img:hover {
+    cursor: pointer;
 }
 
 /* FOOTER */
@@ -93,9 +257,101 @@ footer {
     height: 40px;
     width: 100%;
     background-color: #37003C;
-    padding: 1%;
+    padding: 0.5% 0;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #e90052;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* MODAL */
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(147, 147, 147);
+    /* Fallback color */
+    background-color: rgba(120, 120, 120, 0.9);
+    /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #37003C;
+    padding: 10px 0;
+    height: 150px;
+  }
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #37003C;
+    font-size: 60px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #e90052;
+    text-decoration: none;
+    cursor: pointer;
 }

@@ -13,33 +13,33 @@
 <body>
     <?php require_once("_include/header.php") ?>
 
-    <main>
-        <h1>All clubs</h1>
+    <main class="mainIndex">
+        <h1 class="h1Index">All clubs</h1>
         <div class="container">
             <?php foreach ($premierLeagueTeams["teams"] as $team) { ?>
-                <div class="card">
-                    <div class="team">
-                        <h2><?= $team['strTeam']?></h2>
-                        <img class="badge" src="<?= $team['strTeamBadge'] ?>" alt="<?= $team['strAlternate'] ?>" title="<?= $team['strAlternate'] ?> Badge">
+                <?php $teamId = $team['idTeam'] ?>
+                <div class="cardCard">
+                    <div class="teamCard">
+                        <h2 class="h2Card"><?= $team['strTeam']?></h2>
+                        <img class="badgeCard" src="<?= $team['strTeamBadge'] ?>" alt="<?= $team['strAlternate'] ?>'s Badge" title="<?= $team['strAlternate'] ?>'s Badge">
                     </div>
 
-                    <p><?= substr($team['strDescriptionEN'], 0, 350) . '...' ?><a href="details.php">Read more</a></p>
+                    <p class="pCard"><?= substr($team['strDescriptionEN'], 0, 350) . '...' ?><a class="aCard" href="detail.php?idTeam=<?= $teamId ?>">Read more</a></p>
 
-                    <p class="bold">Formed year : <?= $team['intFormedYear']?></p>
+                    <p class="boldCard pCard">Formed year : <?= $team['intFormedYear']?></p>
 
-                    <h3>Team Jersey</h3>
-                    <img class="jersey" src="<?= $team['strTeamJersey']?>" alt="<?= $team['strAlternate']?>'s Home Jersey" title="<?= $team['strAlternate']?>'s Home Jersey">
+                    <h3 class="h3Card">Team Jersey</h3>
+                    <img class="jerseyCard" src="<?= $team['strTeamJersey']?>" alt="<?= $team['strAlternate']?>'s Home Jersey" title="<?= $team['strAlternate']?>'s Home Jersey">
 
-                    <h3>Team Stadium</h3>
-                    <img class="stadium" src="<?= $team[ 'strStadiumThumb']?>" alt="<?= $team['strStadium']?>" title="<?= $team['strStadium']?>">
-                    <p class="bold"><?= $team['strStadium']?></p>
+                    <h3 class="h3Card">Team Stadium</h3>
+                    <img class="stadiumCard" src="<?= $team['strStadiumThumb']?>" alt="<?= $team['strStadium']?>'s Stadium" title="<?= $team['strStadium']?>'s Stadium">
+                    <p class="boldCard pCard"><?= $team['strStadium']?></p>
                 </div>
             <?php } ?>
         </div>    
     </main>
 
-
-
     <?php require_once("_include/footer.php") ?>
+    
 </body>
 </html>

@@ -98,6 +98,7 @@ header img {
 
 .bannerDetail {
     width: 100%;
+    margin-bottom: -4px;
 }
 
 .teamDetail {
@@ -116,7 +117,6 @@ header img {
 }
 
 .underBannerDetail {
-    width: 100%;
     background-color: #37003C;
     padding: 0 50px;
     position: sticky;
@@ -144,7 +144,7 @@ header img {
 }
 
 .mainDetail {
-    padding: 50px 0;
+    padding: 70px 0;
     display: flex;
     flex-direction: column;
 }
@@ -240,7 +240,7 @@ hr {
 }
 
 .galleryDetail img {
-    width: 10%;
+    width: 8%;
     object-fit: cover;
     border: solid 5px #e90052;
     border-radius: 0 25px;
@@ -341,10 +341,10 @@ footer a:hover {
 /* The Close Button */
 .close {
     position: absolute;
-    top: 15px;
-    right: 35px;
+    top: 0px;
+    right: 50%;
     color: #37003C;
-    font-size: 60px;
+    font-size: 80px;
     font-weight: bold;
     transition: 0.3s;
 }
@@ -354,4 +354,76 @@ footer a:hover {
     color: #e90052;
     text-decoration: none;
     cursor: pointer;
+}
+
+/* RESPONSIVE */
+
+/* HEADER */
+
+@media screen and (max-width : 920px) {
+    header img {
+        height: 70px;
+    }
+}
+
+@media screen and (max-width : 600px) {
+    header img {
+        height: 50px;
+    }
+}
+
+/* INDEX */
+
+@media screen and (max-width : 920px) {
+    .cardCard {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width : 600px) {
+    .cardCard {
+        width: 100%;
+    }
+}
+
+/* DETAIL */
+
+@media screen and (max-width : 920px) {
+    .underBannerDetail {
+        top: 68px;
+    }
+    
+    .underBannerDetail a {
+        font-size: 20px;
+    }
+
+    .h1Detail {
+        font-size: 20px;
+    }
+
+    .badgeDetail {
+        height: 35px;
+    }
+
+    
+}
+
+@media screen and (max-width : 600px) {
+    .underBannerDetail {
+        top: 49px;
+    }
+    
+    .underBannerDetail a {
+        font-size: 10px;
+    }
+
+    .h1Detail {
+        font-size: 10px;
+    }
+
+    .badgeDetail {
+        height: 15px;
+    }
+
+    
 }

@@ -25,38 +25,39 @@ $team = $premierLeagueTeams['teams'][$teamKey];
 
     <?php require_once("_include/header.php") ?>
 
-    <div class="container">
-        <img class="bannerDetail" src="<?= $team['strTeamBanner'] ?>" alt="<?= $team['strAlternate'] ?>" title="<?= $team['strAlternate'] ?>'s Banner">
-        <div class="underBannerDetail">
-            <a href="index.php">
-                <i class="fa-solid fa-house"></i>
+    <!-- <div class="container"> -->
+    <img class="bannerDetail" src="<?= $team['strTeamBanner'] ?>" alt="<?= $team['strAlternate'] ?>" title="<?= $team['strAlternate'] ?>'s Banner">
+    <!-- </div> -->
+
+    <div class="underBannerDetail">
+        <a href="index.php">
+            <i class="fa-solid fa-house"></i>
+        </a>
+        <div class="teamDetail">
+            <h1 class="h1Detail"><?= $team['strAlternate'] ?></h1>
+            <img class="badgeDetail" src="<?= $team['strTeamBadge'] ?>" alt="<?= $team['strAlternate'] ?>'s Badge" title="<?= $team['strAlternate'] ?>'s Badge">
+        </div>
+        <div class="socialDetail">
+            <a href="http://<?= $team['strWebsite'] ?>" target="_blank">
+                <i class="fa-solid fa-globe"></i>
             </a>
-            <div class="teamDetail">
-                <h1 class="h1Detail"><?= $team['strAlternate'] ?></h1>
-                <img class="badgeDetail" src="<?= $team['strTeamBadge'] ?>" alt="<?= $team['strAlternate'] ?>'s Badge" title="<?= $team['strAlternate'] ?>'s Badge">
-            </div>
-            <div class="socialDetail">
-                <a href="http://<?= $team['strWebsite'] ?>" target="_blank">
-                    <i class="fa-solid fa-globe"></i>
+            <a href="http://<?= $team['strFacebook'] ?>" target="_blank">
+                <i class="fa-brands fa-facebook-square"></i>
+            </a>
+            <a href="http://<?= $team['strTwitter'] ?>" target="_blank">
+                <i class="fa-brands fa-twitter-square"></i>
+            </a>
+            <a href="http://<?= $team['strInstagram'] ?>" target="_blank">
+                <i class="fa-brands fa-instagram-square"></i>
+            </a>
+            <a href="http://<?= $team['strYoutube'] ?>" target="_blank">
+                <i class="fa-brands fa-youtube-square"></i>
+            </a>
+            <?php if ($team['strRSS']) { ?>
+                <a href="http://<?= $team['strRSS'] ?>" target="_blank">
+                    <i class="fa-solid fa-square-rss"></i>
                 </a>
-                <a href="http://<?= $team['strFacebook'] ?>" target="_blank">
-                    <i class="fa-brands fa-facebook-square"></i>
-                </a>
-                <a href="http://<?= $team['strTwitter'] ?>" target="_blank">
-                    <i class="fa-brands fa-twitter-square"></i>
-                </a>
-                <a href="http://<?= $team['strInstagram'] ?>" target="_blank">
-                    <i class="fa-brands fa-instagram-square"></i>
-                </a>
-                <a href="http://<?= $team['strYoutube'] ?>" target="_blank">
-                    <i class="fa-brands fa-youtube-square"></i>
-                </a>
-                <?php if ($team['strRSS']) { ?>
-                    <a href="http://<?= $team['strRSS'] ?>" target="_blank">
-                        <i class="fa-solid fa-square-rss"></i>
-                    </a>
-                <?php } ?>
-            </div>
+            <?php } ?>
         </div>
     </div>
 
@@ -86,7 +87,7 @@ $team = $premierLeagueTeams['teams'][$teamKey];
                 <img src="<?= $team['strStadiumThumb'] ?>" alt="<?= $team['strAlternate'] ?>'s Stadium" title="<?= $team['strAlternate'] ?>'s Stadium">
 
                 <div class="infoDetail">
-                    <h2 class="h2InfoDetail">Quick information</h2>
+                    <h2 class="h2InfoDetail">Quick informations</h2>
                     <h3 class="h3Detail">Name</h3>
                     <p class="pDetail"><?= $team['strStadium'] ?></p>
                     <hr>
@@ -118,14 +119,15 @@ $team = $premierLeagueTeams['teams'][$teamKey];
             <div class="cardGalleryDetail">
                 <h2 class="h2Detail">Gallery</h2>
                 <div class="galleryDetail">
-                    <img id="myImg1" onclick="clickNext('myImg1')" src="<?= $team['strTeamBadge'] ?>" alt="<?= $team['strAlternate'] ?>'s Badge" title="<?= $team['strAlternate'] ?>'s Badge">
-                    <img id="myImg2" onclick="clickNext('myImg2')" src="<?= $team['strTeamJersey'] ?>" alt="<?= $team['strAlternate'] ?>'s Home Jersey" title="<?= $team['strAlternate'] ?>'s Home Jersey">
-                    <img id="myImg3" onclick="clickNext('myImg3')" src="<?= $team['strTeamLogo'] ?>" alt="<?= $team['strAlternate'] ?>'s Logo" title="<?= $team['strAlternate'] ?>'s Logo">
-                    <img id="myImg4" onclick="clickNext('myImg4')" src="<?= $team['strTeamFanart1'] ?>" alt="<?= $team['strAlternate'] ?>'s Fanart 1" title="<?= $team['strAlternate'] ?>'s Fanart 1">
-                    <img id="myImg5" onclick="clickNext('myImg5')" src="<?= $team['strTeamFanart2'] ?>" alt="<?= $team['strAlternate'] ?>'s Fanart 2" title="<?= $team['strAlternate'] ?>'s Fanart 2">
-                    <img id="myImg6" onclick="clickNext('myImg6')" src="<?= $team['strTeamFanart3'] ?>" alt="<?= $team['strAlternate'] ?>'s Fanart 3" title="<?= $team['strAlternate'] ?>'s Fanart 3">
-                    <img id="myImg7" onclick="clickNext('myImg7')" src="<?= $team['strTeamFanart4'] ?>" alt="<?= $team['strAlternate'] ?>'s Fanart 4" title="<?= $team['strAlternate'] ?>'s Fanart 4">
-                    <img id="myImg8" onclick="clickNext('myImg8')" src="<?= $team['strTeamBanner'] ?>" alt="<?= $team['strAlternate'] ?>" title="<?= $team['strAlternate'] ?>'s Banner">
+                    <img id="myImg1" onclick="clickNext('myImg1')" src="<?= $team['strStadiumThumb'] ?>" alt="<?= $team['strAlternate'] ?>'s Stadium" title="<?= $team['strAlternate'] ?>'s Stadium">
+                    <img id="myImg2" onclick="clickNext('myImg2')" src="<?= $team['strTeamBadge'] ?>" alt="<?= $team['strAlternate'] ?>'s Badge" title="<?= $team['strAlternate'] ?>'s Badge">
+                    <img id="myImg3" onclick="clickNext('myImg3')" src="<?= $team['strTeamJersey'] ?>" alt="<?= $team['strAlternate'] ?>'s Home Jersey" title="<?= $team['strAlternate'] ?>'s Home Jersey">
+                    <img id="myImg4" onclick="clickNext('myImg4')" src="<?= $team['strTeamLogo'] ?>" alt="<?= $team['strAlternate'] ?>'s Logo" title="<?= $team['strAlternate'] ?>'s Logo">
+                    <img id="myImg5" onclick="clickNext('myImg5')" src="<?= $team['strTeamFanart1'] ?>" alt="<?= $team['strAlternate'] ?>'s Fanart 1" title="<?= $team['strAlternate'] ?>'s Fanart 1">
+                    <img id="myImg6" onclick="clickNext('myImg6')" src="<?= $team['strTeamFanart2'] ?>" alt="<?= $team['strAlternate'] ?>'s Fanart 2" title="<?= $team['strAlternate'] ?>'s Fanart 2">
+                    <img id="myImg7" onclick="clickNext('myImg7')" src="<?= $team['strTeamFanart3'] ?>" alt="<?= $team['strAlternate'] ?>'s Fanart 3" title="<?= $team['strAlternate'] ?>'s Fanart 3">
+                    <img id="myImg8" onclick="clickNext('myImg8')" src="<?= $team['strTeamFanart4'] ?>" alt="<?= $team['strAlternate'] ?>'s Fanart 4" title="<?= $team['strAlternate'] ?>'s Fanart 4">
+                    <img id="myImg9" onclick="clickNext('myImg9')" src="<?= $team['strTeamBanner'] ?>" alt="<?= $team['strAlternate'] ?>" title="<?= $team['strAlternate'] ?>'s Banner">
                 </div>
             </div>
         </div>

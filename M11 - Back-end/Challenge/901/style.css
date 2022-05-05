@@ -343,6 +343,7 @@ footer a:hover {
     position: absolute;
     top: 0px;
     right: 50%;
+    transform: translateX(+50%);
     color: #37003C;
     font-size: 80px;
     font-weight: bold;
@@ -377,12 +378,15 @@ footer a:hover {
 @media screen and (max-width : 920px) {
     .cardCard {
         width: 40%;
+        padding: 2%;
     }
 }
 
 @media screen and (max-width : 600px) {
     .cardCard {
         width: 100%;
+        margin: 3%;
+        padding: 3%;
     }
 }
 
@@ -405,6 +409,32 @@ footer a:hover {
         height: 35px;
     }
 
+    .main1Detail {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cardDetail {
+        width:75%;
+        margin-bottom: 30px;
+    }
+
+    .cardTrophyDetail {
+        width:75%;
+    }
+
+    .cardGalleryDetail {
+        width: 75%;
+    }
+
+    .galleryDetail {
+        flex-wrap: wrap;
+    }
+
+    .galleryDetail img {
+        width: 28%;
+        margin-bottom: 20px;
+    }
     
 }
 
@@ -425,5 +455,31 @@ footer a:hover {
         height: 15px;
     }
 
-    
+    .main1Detail {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cardDetail {
+        width:75%;
+        margin-bottom: 30px;
+    }
+
+    .cardTrophyDetail {
+        width:75%;
+    }
+
+    .cardGalleryDetail {
+        width: 75%;
+    }
+
+    .galleryDetail {
+        flex-wrap: wrap;
+    }
+
+    .galleryDetail img {
+        width: 28%;
+        margin-bottom: 20px;
+    }
+
 }

@@ -1,0 +1,18 @@
+body {
+    display: flex;
+    justify-content: space-around;
+}
+
+.box {
+    width: 140px;
+    height: 140px;
+    border-radius: 20px;
+    background-color: darkgreen;
+    box-shadow: 5px 5px 10px rgb(63, 63, 63);
+    color: lightgreen;
+    font-family: sans-serif;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.6.0.min.js"></script>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
+    <title>jQuery Design 2</title>
+</head>
+
+<body>
+    <h1 id="title">Actus</h1>
+    <h2>Paysage</h2>
+    <div class="container">
+        <img src="5c936f8b24000086064e8fa7.jpeg" alt="blob" id="img">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut hic delectus similique repellendus consequatur earum harum obcaecati rem aliquam magni!</p>
+    </div>
+    <a href="#">Clic batard !</a>
+
+
+    <script>
+        let title = $("#title");
+        title.mouseenter(function(){
+            title.css("text-decoration","underline");
+        })
+
+        let img = $("#img");
+        img.click(function(){
+            img.hide("slow");
+        })
+    </script>
+</body>
+
+</html>

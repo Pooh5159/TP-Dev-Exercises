@@ -24,9 +24,9 @@
 <body>
     <div class="text-center">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Webysther_20160423_-_Elephpant.svg/1200px-Webysther_20160423_-_Elephpant.svg.png">
+        <h1>002 - On continue à se faire mal</h1>
         <div>
-            <a href="1.php">1. On ne supprime pas au hasard !</a>
-            <h1>002 - On continue à se faire mal</h1>
+            <a href="1.php">1. On ne supprime pas au hasard !</a>            
         </div>
         <div>
             <a href="2.php">2. On ne supprime pas au hasard : la suite</a>

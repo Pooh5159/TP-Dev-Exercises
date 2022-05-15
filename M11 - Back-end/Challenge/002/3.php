@@ -13,6 +13,24 @@
         <a href="/">Retour à l'index</a>
     </div>
     <?php
+    
+
+    // Boucle de 1 à 150
+    for ($i = 1; $i <= 150; $i++){
+        // Diviser $i / $i ou 1
+        if ($i/$i == 1) {
+            return result1
+        }
+        // Diviser $i / $i précédent
+        for ($i/ ????)
+        // Si divison $i ok suivant
+        if (result1 || result2) {
+
+        } else {
+        // Si division $i !ok premier
+            array_push($premNum, $i)
+        }
+    }
 
     ?>
 </body>

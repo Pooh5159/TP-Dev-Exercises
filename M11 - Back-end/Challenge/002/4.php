@@ -14,6 +14,12 @@
     </div>
     <?php
 
+    // operation(5, 25) // ➞ 2
+    // operation(2, 64) // ➞ 6
+    // operation(2, 4) // ➞ 2
+    // operation(8, 2097152) // ➞ 7
+
+
     ?>
 </body>
 

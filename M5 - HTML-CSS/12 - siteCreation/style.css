@@ -1,0 +1,45 @@
+body {
+    background: linear-gradient(153deg, rgba(255,0,0,1) 0%, rgba(255,167,0,1) 13%, rgba(253,255,0,1) 26%, rgba(0,254,16,1) 39%, rgba(0,255,239,1) 52%, rgba(0,31,255,1) 65%, rgba(98,0,255,1) 78%, rgba(251,0,224,1) 100%);
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(0, 8, 255);
+    margin-bottom: 5%;
+}
+
+main {
+    width: 80%;
+    padding: 1%;
+    background-color: rgb(121, 121, 121);
+    margin: 0 auto;
+}
+
+.article {
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto 5% auto;
+    padding: 2%;
+}
+
+.content {
+    display: flex;
+} 
+
+h2 {
+    text-align: center;
+    color: rgb(35, 135, 155);
+    margin-bottom: 2%;
+}
+
+.paillette {
+    font-weight: bold;
+    color: goldenrod;
+}
+
+img {
+    width: 40%;
+    object-fit: cover;
+    margin-right: 2%;
+}

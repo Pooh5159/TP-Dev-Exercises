@@ -1,0 +1,33 @@
+<?php
+
+function listNumbers(int $begin, int $end): array
+{
+    $primeNumbers = [];
+    $checked = [];
+    // Loop through all numbers given by user from begin to end
+    for ($i = $begin; $i <= $end; $i++) {
+        // If number is different from 1
+        if ($i !== 1) {
+            // By default the current number is considered as prime
+            $prime = true;
+            // We loop through already checked numbers array
+            foreach ($checked as $value) {
+                // If current number can be divided by a number we already checked before, set prime to false
+                if ($i % $value === 0) {
+                    $prime = false;
+                    break;
+                }
+            }
+
+            // Push number to primeNumbers array if prime is still true after all verifications
+            if ($prime) {
+                array_push($primeNumbers, $i);
+            }
+            // Also add it to checked numbers array
+            array_push($checked, $i);
+        }
+    }
+    return $primeNumbers;
+}
+
+var_dump(listNumbers(1, 150));

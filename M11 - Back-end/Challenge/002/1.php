@@ -13,6 +13,23 @@
         <a href="/">Retour à l'index</a>
     </div>
     <?php
+    function deleteWithKey(array $array, $key){
+        unset($array[$key]);
+        return $array;
+    };
+
+    $arrayOne = [ 10, 25, 87, "patate", "cuillère", 8.2];
+    $arrayTwo = [
+        "orange" => "clémentine",
+        "jaune" => "banane",
+        "vert" => "pomme",
+        "rouge" => "fraise"
+    ];
+
+    var_dump($arrayOne, $arrayTwo);
+
+    var_dump(deleteWithKey($arrayOne, 3));
+    var_dump(deleteWithKey($arrayTwo, "vert"));
 
     ?>
 </body>

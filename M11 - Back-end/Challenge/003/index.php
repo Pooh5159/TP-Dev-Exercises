@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>002 - On continue à se faire mal !</title>
+    <title>003 - On va formulair'un peu !</title>
     <style>
         a {
             line-height: 3rem;
@@ -24,7 +24,7 @@
 <body>
     <div class="text-center">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Webysther_20160423_-_Elephpant.svg/1200px-Webysther_20160423_-_Elephpant.svg.png">
-        <h1>003 - On var formulair'un peu !</h1>
+        <h1>003 - On va formulair'un peu !</h1>
         <div>
             <a href="1.php">1. Easy avec une petite form’ !</a>
         </div>

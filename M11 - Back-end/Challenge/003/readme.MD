@@ -8,7 +8,7 @@ Ce premier défi consiste à créer un formulaire ayant plusieurs règles à res
 - Il doit permettre la récupération d’un nom et prénom
 
 <aside>
-La page de destination, avec la structure de votre choix, doit permettre l’affichage des informations collectées sous un format texte, lui même centré horizontalement et à 150px du bord haut de l’écran.
+💡 La page de destination, avec la structure de votre choix, doit permettre l’affichage des informations collectées sous un format texte, lui même centré horizontalement et à 150px du bord haut de l’écran.
 </aside>
 
 ```php
@@ -25,7 +25,7 @@ Dans ce défi, les consignes sont très simples, créer un formulaire contenant 
 - Vérification du mot de passe
 
 <aside>
-L’objectif est de vérifier, dans une nouvelle page nommée **traitement.php** si le mot de passe fait au moins **8 caractères, au minimum une majuscule, et ainsi qu’un chiffre mini**
+💡 L’objectif est de vérifier, dans une nouvelle page nommée <span style="font-weight: bold;">traitement.php</span> si le mot de passe fait au moins <span style="font-weight: bold; color : red;">8 caractères, au minimum une majuscule, et ainsi qu’un chiffre mini</span>
 </aside>
 
 ## 3. Ce n'est pas un si simple form'alité
@@ -49,7 +49,7 @@ L’objectif va consister **à vérifier si l’email repecte les conditions ci-
 
 </aside>
 
-## 4. Audelà de votre parcours de form'ation
+## 4. Au-delà de votre parcours de form'ation
 
 Les consignes sont simples: 
 - Vous devez créer un panier contenant 3 articles au format HTML / CSS avec les outils de votre choix. Les 3 articles doivent avoir un prix différents
@@ -64,5 +64,8 @@ TROP_BIEN = 30% de réduc
 MAIS_LE_PERE_NOEL_EXISTE = 75% de réduc 
 (mais que sur l'article le moins cher ! faut pas pousser non plus)
 ```
+
+> Il s’avère donc important de spécifier qu’en cas de code appliqué, la zone de coupon disparaitra bien sûr
+>
 
 ***SI vous êtes suicidaire, essayez d’ajouter des quantités 😂***

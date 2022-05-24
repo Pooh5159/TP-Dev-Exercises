@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.6.0.min.js"></script>
+    <style>
+        img {
+            width: 100px;
+            height: 150px;
+            object-fit: cover;
+        }
+    </style>
+    <title>Add an image with an input</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <img src="img/affiche1.jpg" alt="">
+        <img src="img/affiche2.jpg" alt="">
+        <img src="img/affiche3.jpg" alt="">
+        <img src="img/affiche4.jpg" alt="">
+        <img src="img/affiche5.jpg" alt="">
+    </div>
+
+    <div class="inputContainer">
+        <div class="input">
+            <input type="text" id="inputImg" placeholder="Link of your image">
+            <button id="add">Add</button>
+        </div>
+    </div>
+
+    <script>
+        $("#add").click(function(){
+            let inputVal = $("#inputImg").val();
+
+            $(".container").append("<img src='"+inputVal+"'/>");
+        });
+
+        $(document).on("click","img",function(){
+            $(this).remove();
+        })
+    </script>
+
+</body>
+
+</html>

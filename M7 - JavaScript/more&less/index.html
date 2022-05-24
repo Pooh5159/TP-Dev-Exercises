@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #number {
+            width: 65px;
+            height: 30px;
+            margin-bottom: 10px;
+        }
+
+        #validate {
+            width: 70px;
+            height: 40px;
+            border: none;
+            background-color: lightgreen;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px green;
+        }
+
+        #validate:hover {
+            box-shadow: inset 5px 5px 5px green;
+        }
+    </style>
+    <title>More & Less</title>
+</head>
+
+<body>
+    <h1>More or less : The Game !</h1>
+    <input type="number" name="number" id="number">
+    <input type="button" value="Validate" id="validate">
+    <p id="p">More or less</p>
+
+
+
+    <script>
+        var numberToFind = Math.floor(Math.random() * 100) + 1;
+
+        let validate = $("#validate");
+        let tries = 0;
+
+        function isWin() {
+            let number = $("#number").val();
+            if (number < numberToFind) {
+                $("#p").text("More");
+            }
+
+            else if (number > numberToFind) {
+                $("#p").text("Less");
+            }
+
+            else {
+                $("#p").text("Win");
+            }
+        }
+
+        validate.click(isWin);
+
+    </script>
+</body>
+
+</html>

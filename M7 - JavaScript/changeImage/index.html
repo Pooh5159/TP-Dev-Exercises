@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.6.0.min.js"></script>
+    <style>
+        img {
+            margin: auto;
+            height: 400px;
+            width: 400px;
+            object-fit: cover;
+        }
+    </style>
+    <title>Change Image</title>
+</head>
+
+<body>
+    <div>
+        <img src="img/Cat-1.jpeg" alt="Cat-1" id="img">
+    </div>
+
+    <script>
+
+        let stateImg = 1;
+
+        $("#img").click(function(){
+
+            if(stateImg == 1){
+                stateImg = 2;
+                $("#img").attr("src", "img/Cat-2.jpg");
+            } else if(stateImg == 2){
+                stateImg = 3;
+                $("#img").attr("src", "img/Cat-3.jpeg");
+            } else {
+                stateImg = 1;
+                $("#img").attr("src", "img/Cat-1.jpeg");
+            }
+
+        })
+
+    </script>
+</body>
+
+</html>

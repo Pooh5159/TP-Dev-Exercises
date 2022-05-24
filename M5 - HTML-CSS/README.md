@@ -68,3 +68,14 @@ Making a site clone
 Making a site clone
 
 ![M5 - siteYoutube](https://user-images.githubusercontent.com/92722233/165290974-5a8295cf-7e57-43e9-b785-37e858d5b4a2.png)
+
+
+## 11 - siteYoutube
+
+### Exercise in Autonomy
+1. Create a site, on any subject.
+2. This site will be articulated around a main container with a width of 80% of the page and centered. No maximum height.
+3. In your main container will be about ten articles each composed of a title and one or more paragraphs. Each article must be different, especially in content size.
+4. Format your articles with a minimum of colors/margins/borders so that they are each original
+5. Organize articles in columns. The number of columns must be able to vary according to the size of the window.
+Tips: The flex alone is enough, no media queries necessary

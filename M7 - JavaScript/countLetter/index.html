@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.6.0.min.js"></script>
+    <title>Count letter</title>
+</head>
+
+<body>
+
+    <input id="text" type="text" placeholder="Enter a word or a phrase">
+    <button id="ok">Ok</button>
+
+    <div id="result">
+        <div id="resultVoyelles">
+            <h2>Voyelles :</h2>
+        </div>
+        <div id="resultConsonnes">
+            <h2>Consonnes :</h2>
+        </div>
+    </div>
+
+
+    <script>
+
+        let voyelle = [];
+        let consonne = [];
+
+        $("#ok").click(function () {
+            let textVal = $("#text").val();
+
+            for (let i = 0; i < textVal.length; i++) {
+
+                if (textVal[i] != " " && textVal[i] != "'") {
+                    if ("aeiouyAEIOUYáàâäãåéèêëíïîìñóòôöõúùûüýÁÀÂÄÃÅÉÈÊËÍÏÎÌÑÓÒÔÖÕÚÙÛÜÝ".includes(textVal[i])) {
+                        voyelle.push(textVal[i]);
+                    } else {
+                        consonne.push(textVal[i]);
+                    }
+                }
+            }
+
+            voyelle = [...new Set(voyelle)];
+            consonne = [...new Set(consonne)];
+
+            let resultVoyelles = $("#resultVoyelles");
+            for (let v of voyelle) {
+                resultVoyelles.append("<p>" + v + "</p>");
+            }
+
+            let resultConsonnes = $("#resultConsonnes");
+            for (let c of consonne) {
+                resultConsonnes.append("<p>" + c + "</p>");
+            }
+        })
+
+    </script>
+
+</body>
+
+</html>
